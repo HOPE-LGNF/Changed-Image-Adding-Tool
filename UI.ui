@@ -6,20 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>467</width>
-    <height>500</height>
+    <width>471</width>
+    <height>468</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>467</width>
-    <height>500</height>
+    <width>451</width>
+    <height>468</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>467</width>
-    <height>500</height>
+    <width>471</width>
+    <height>468</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -31,7 +31,7 @@
      <x>10</x>
      <y>0</y>
      <width>451</width>
-     <height>111</height>
+     <height>101</height>
     </rect>
    </property>
    <property name="maximumSize">
@@ -52,14 +52,14 @@
       <x>0</x>
       <y>60</y>
       <width>451</width>
-      <height>61</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="text">
      <string>Changed在e621上的标签</string>
     </property>
     <property name="description">
-     <string notr="true">可能含有18+内容</string>
+     <string notr="true"/>
     </property>
    </widget>
    <widget class="QCommandLinkButton" name="fandomLinkButton_2">
@@ -83,17 +83,29 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>110</y>
+     <y>100</y>
      <width>451</width>
-     <height>381</height>
+     <height>351</height>
     </rect>
    </property>
+   <property name="minimumSize">
+    <size>
+     <width>451</width>
+     <height>341</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>6454545</width>
+     <height>16777215</height>
+    </size>
+   </property>
    <property name="currentIndex">
-    <number>1</number>
+    <number>0</number>
    </property>
    <widget class="QWidget" name="tab">
     <attribute name="title">
-     <string>选择图片并确认</string>
+     <string>原理</string>
     </attribute>
     <widget class="QGroupBox" name="groupBox_2">
      <property name="geometry">
@@ -101,59 +113,19 @@
        <x>10</x>
        <y>10</y>
        <width>421</width>
-       <height>341</height>
+       <height>301</height>
       </rect>
      </property>
      <property name="title">
       <string/>
      </property>
-     <widget class="QWidget" name="formLayoutWidget">
+     <widget class="QTextEdit" name="textEdit">
       <property name="geometry">
        <rect>
         <x>10</x>
         <y>10</y>
         <width>401</width>
-        <height>61</height>
-       </rect>
-      </property>
-      <layout class="QFormLayout" name="formLayout">
-       <item row="0" column="0">
-        <widget class="QPushButton" name="chooseimage">
-         <property name="text">
-          <string>选择图片</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="1">
-        <widget class="QLineEdit" name="inagefilepathEdit">
-         <property name="placeholderText">
-          <string>输入文件路径</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="0">
-        <widget class="QLabel" name="label">
-         <property name="text">
-          <string>  &quot;你知道吗&quot;</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="1">
-        <widget class="QLineEdit" name="hint_input">
-         <property name="placeholderText">
-          <string>输入&quot;你知道吗&quot;的内容</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QTextEdit" name="textEdit">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>110</y>
-        <width>401</width>
-        <height>191</height>
+        <height>261</height>
        </rect>
       </property>
       <property name="readOnly">
@@ -164,33 +136,20 @@
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-weight:696;&quot;&gt;添加随机Changed图片&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI';&quot;&gt;具体的实现原理为：&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI';&quot;&gt;· 将图片文件命名为&amp;quot;你知道吗&amp;quot;的内容之一 &lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI';&quot;&gt;· 在显示图片时使用{hint}替代图片路径&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI';&quot;&gt;所以可以通过添加&amp;quot;你知道吗&amp;quot;的条目来将图片添加到播放列表&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; color:#7a7a7a;&quot;&gt;注：因为文件名不能包含特殊字符(\ / : ? &amp;quot; &amp;lt; &amp;gt; | )&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; color:#7a7a7a;&quot;&gt;所以&amp;quot;你知道吗&amp;quot;的内容也不能包含这些字符&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton">
-      <property name="geometry">
-       <rect>
-        <x>7</x>
-        <y>75</y>
-        <width>401</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>添加</string>
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:10pt; font-weight:696;&quot;&gt;添加任意Changed图片&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:10pt;&quot;&gt;具体的实现原理为：&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:10pt;&quot;&gt;· 将图片文件命名为&amp;quot;你知道吗&amp;quot;的内容之一 &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:10pt;&quot;&gt;· 在显示图片时使用{hint}替代图片路径&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:10pt;&quot;&gt;所以可以通过添加&amp;quot;你知道吗&amp;quot;的条目来将图片添加到播放列表&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:10pt; color:#7a7a7a;&quot;&gt;注：因为文件名不能包含特殊字符(\ / : ? &amp;quot; &amp;lt; &amp;gt; | )&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:10pt; color:#7a7a7a;&quot;&gt;所以&amp;quot;你知道吗&amp;quot;的内容也不能包含这些字符&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_5">
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>320</y>
+        <y>270</y>
         <width>401</width>
         <height>20</height>
        </rect>
@@ -199,7 +158,7 @@ p, li { white-space: pre-wrap; }
        <string notr="true">color: rgb(122, 122, 122);</string>
       </property>
       <property name="text">
-       <string>Designed by HOPE ©Copyright 2024</string>
+       <string>Designed by HOPE</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -209,15 +168,15 @@ p, li { white-space: pre-wrap; }
    </widget>
    <widget class="QWidget" name="tab_2">
     <attribute name="title">
-     <string>下载图片</string>
+     <string>添加图片</string>
     </attribute>
     <widget class="QWidget" name="formLayoutWidget_2">
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>30</y>
+       <y>20</y>
        <width>401</width>
-       <height>91</height>
+       <height>61</height>
       </rect>
      </property>
      <layout class="QFormLayout" name="formLayout_2">
@@ -227,37 +186,6 @@ p, li { white-space: pre-wrap; }
          <string>下载地址</string>
         </property>
        </widget>
-      </item>
-      <item row="1" column="0">
-       <widget class="QLabel" name="label_2">
-        <property name="text">
-         <string>保存到</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="1">
-       <layout class="QHBoxLayout" name="horizontalLayout">
-        <item>
-         <widget class="QLineEdit" name="savepathEdit"/>
-        </item>
-        <item>
-         <widget class="QPushButton" name="choosesavepath">
-          <property name="text">
-           <string>选择</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-      <item row="2" column="0">
-       <widget class="QLabel" name="label_4">
-        <property name="text">
-         <string>文件名</string>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="1">
-       <widget class="QLineEdit" name="savefilenameEdit"/>
       </item>
       <item row="0" column="1">
        <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -273,29 +201,21 @@ p, li { white-space: pre-wrap; }
         </item>
        </layout>
       </item>
-     </layout>
-    </widget>
-    <widget class="QWidget" name="horizontalLayoutWidget_2">
-     <property name="geometry">
-      <rect>
-       <x>120</x>
-       <y>120</y>
-       <width>201</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <layout class="QHBoxLayout" name="horizontalLayout_2">
-      <item>
-       <widget class="QPushButton" name="download_file">
-        <property name="text">
-         <string>下载</string>
-        </property>
-       </widget>
+      <item row="1" column="1">
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLineEdit" name="hint_input">
+          <property name="placeholderText">
+           <string>输入&quot;你知道吗&quot;的内容</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </item>
-      <item>
-       <widget class="QPushButton" name="open_file_dir">
+      <item row="1" column="0">
+       <widget class="QLabel" name="label">
         <property name="text">
-         <string>打开文件夹</string>
+         <string>&quot;你知道吗&quot;</string>
         </property>
        </widget>
       </item>
@@ -305,7 +225,7 @@ p, li { white-space: pre-wrap; }
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>150</y>
+       <y>80</y>
        <width>401</width>
        <height>191</height>
       </rect>
@@ -333,13 +253,26 @@ p, li { white-space: pre-wrap; }
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>10</y>
+       <y>0</y>
        <width>421</width>
        <height>20</height>
       </rect>
      </property>
      <property name="text">
       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600; color:#ff0000;&quot;&gt;链接必须为以http://或https://开头的网址,部分网址可能无法下载&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="download_file">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>282</y>
+       <width>399</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>下载并添加</string>
      </property>
     </widget>
    </widget>
