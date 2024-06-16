@@ -27,6 +27,7 @@
 
 ## 添加图片
 刷新主页后,点击右面往下翻有个添加Changed图片的按钮,按下去会导航到main.exe,双击打开,等待一会就能添加了
-![image](https://github.com/HOPE-LGNF/Changed-Image-Adding-Tool/assets/159258343/5e72220d-9727-4149-8ffb-a471bed442ee)
+![image](https://github.com/HOPE-LGNF/Changed-Image-Adding-Tool/assets/159258343/85395b3d-4286-42d6-9c44-d0df228ef997)
+
 
 提示:点击预览按钮可以在线看图,虽它也能打开其他网站
